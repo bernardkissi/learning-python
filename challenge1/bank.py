@@ -1,5 +1,5 @@
-from challenge1.customer import Customer
-from challenge1.wallet import Wallet
+from customer import Customer
+from wallet import Wallet
 
 
 class Bank:

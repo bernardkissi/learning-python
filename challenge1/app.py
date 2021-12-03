@@ -1,6 +1,7 @@
-from challenge1.atm import ATM
-from challenge1.bank import Bank
-from challenge1.customer import Customer
+
+from atm import ATM
+from bank import Bank
+from customer import Customer
 
 # creating customers
 account1 = Customer("bernard", "kissi", "santasi", 108844567, "bern@gmail.com")

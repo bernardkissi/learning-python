@@ -1,5 +1,5 @@
-from challenge1.bank import Bank
-from challenge1.customer import Customer
+from bank import Bank
+from customer import Customer
 
 
 class ATM:
@@ -70,7 +70,7 @@ class ATM:
             withdrawAccount = self.customer.wallet.fetchWallet(wallet)
             amount = int(input("Enter amount to withdraw: "))
             pin = int(input("Enter your account pin to withdraw: "))
-            receipt = input("Do you want a printed receipt: ")
+            receipt = str(input("Do you want a printed receipt: yes/no :"))
 
             if pin == self.customer.pin:
                 if amount > withdrawAccount:
@@ -82,8 +82,11 @@ class ATM:
                     print(self.customer.wallet.fetchAllWallet())
                     if receipt == 'yes':
                         f = open("receipt.txt", "w")
-                        f.write("You have withdrawn {}".format(amount))
-                        f.write(self.customer.wallet.fetchAllWallet())
+                        f.write("You have withdrawn {} ".format(amount))
+                        f.write("Your current account balance is {} ".format(
+                            self.customer.wallet.current))
+                        f.write("Your savings account balance is {} ".format(
+                            self.customer.wallet.savings))
                         f.close()
                     return
             else:
