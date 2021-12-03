@@ -1,6 +1,6 @@
-# PYTHON CODING CHALLENGES -- LEARNING PYTHON
+## PYTHON CODING CHALLENGES -- LEARNING PYTHON
 
-This repo contains will contain simple to complex challenges with python
+This repo contains simple to complex challenges with python
 
 ### This challenges tests the understanding of basic introductory concepts of python and
 
