@@ -27,5 +27,7 @@ ATM should do the following:
 
 ### security concerns
 
+```
 1. user who fails on a third attempt entering their ATM pin should have their account blocked
 2. customers account should be checked with the bank before allowing withdrawal
+```
