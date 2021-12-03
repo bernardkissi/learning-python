@@ -1,4 +1,4 @@
-from wallet import Wallet
+from challenge1.wallet import Wallet
 import random
 
 
