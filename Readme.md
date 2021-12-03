@@ -2,7 +2,7 @@
 
 This repo contains simple to complex challenges with python
 
-### This challenges tests the understanding of basic introductory concepts of python and
+This challenges tests the understanding of basic introductory concepts of python and
 
 1.  SOLID principles:
 2.  Design patterns
