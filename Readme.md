@@ -14,9 +14,9 @@ This challenges tests the understanding of basic introductory concepts of python
 
 ## To run each on your local machine
 
-    for every challenge there is a ```app.py``` through which the challenge can be executed
-    and supports ```python version > 3 ```
+there is a `app.py` through which the challenge can be executed
+and supports `python version > 3 `
 
-    ```
-    To run : python app.py
-    ```
+```
+To run : python app.py
+```
