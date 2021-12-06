@@ -17,7 +17,7 @@ print('{} accounts created in {}'.format(Ecobank.totalAccounts, Ecobank.name))
 # create the ATM machine for the bank
 EcobankATM = ATM(Ecobank)
 # Fetch account by account number from user
-ATMCard = input("Please insert your ATMCard number: ")
+ATMCard = int(input("Please insert your ATMCard number: "))
 # intialize the ATM machine
 ATMachine = EcobankATM.initialize(ATMCard)
 

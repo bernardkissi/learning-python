@@ -1,4 +1,4 @@
-from bank import Bank
+from challenge1.bank import Bank
 from customer import Customer
 
 
@@ -81,19 +81,22 @@ class ATM:
                     print("You have withdrawn {}".format(amount))
                     print(self.customer.wallet.fetchAllWallet())
                     if receipt == 'yes':
-                        f = open("receipt.txt", "w")
-                        f.write("You have withdrawn {} ".format(amount))
-                        f.write("Your current account balance is {} ".format(
-                            self.customer.wallet.current))
-                        f.write("Your savings account balance is {} ".format(
-                            self.customer.wallet.savings))
-                        f.close()
+                        self.printReceipt(
+                            amount, self.customer.wallet.current, self.customer.wallet.savings)
                     return
             else:
                 self.customer.logedInFailed += 1
                 print("Invalid transcation pin is incorrect")
                 return
         print("You have reached the maximum number of failed attempts.Please contact your bank")
+
+    @staticmethod
+    def printReceipt(amount, current, savings):
+        f = open("receipt.txt", "w")
+        f.write("You have withdrawn {} \n".format(amount))
+        f.write("Your current account balance is {} \n".format(current))
+        f.write("Your savings account balance is {} \n".format(savings))
+        f.close()
 
     @staticmethod
     def initializationFailed():
