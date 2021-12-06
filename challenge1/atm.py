@@ -1,4 +1,4 @@
-from challenge1.bank import Bank
+from bank import Bank
 from customer import Customer
 
 
