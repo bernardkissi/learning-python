@@ -13,7 +13,7 @@ dog7 = Sheperd("austrian-german-sheperd", 2500)
 
 # creating a petstore
 petStore = Store("MATT PET STORE")
-petStore.addDogs(dog1, dog2, dog3, dog4, dog5)
+petStore.addDogs(dog1, dog2, dog3, dog4, dog5, dog6, dog7)
 
 # show all dogs in store
 petStore.fetchDogs()
@@ -21,3 +21,8 @@ petStore.fetchDogs()
 # search for the customers prefered dog
 selected = str(input("Enter the name of the dog you want to purchase: "))
 petStore.fetchDog(selected)
+
+# customer can own a dog or dogs
+
+
+# customer plays with his/her purchased dog
