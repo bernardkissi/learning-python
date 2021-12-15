@@ -22,6 +22,9 @@ class Customer:
     def fullname(self) -> str:
         return '{} {}'.format(self.fname, self.lname)
 
+    def setPin(self):
+        self.pin = random.randint(1000, 9999)
+
     def getDetails(self) -> dict:
         return {
             "firstname": self.fname,
@@ -35,8 +38,5 @@ class Customer:
             "wallet": self.wallet.fetchAllWallet()
         }
 
-    def setPin(self):
-        self.pin = random.randint(1000, 9999)
-        
     def addWallet(self, wallet: Wallet):
         self.wallet = wallet

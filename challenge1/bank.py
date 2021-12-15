@@ -1,4 +1,4 @@
-from challenge1.customer import *
+from customer import *
 from wallet import Wallet
 
 

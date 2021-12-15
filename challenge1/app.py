@@ -6,8 +6,9 @@ from customer import Customer
 # creating customers
 account1 = Customer("bernard", "kissi", "santasi", 108844567, "bern@gmail.com")
 account2 = Customer("Austin", "Boateng", "Atonsu", 108844565, "bern@gmail.com")
-account3 = Customer("Theo", "Asamoah", "Oforikrom", 108844235, "thro@gmail.com")
-account3.getDetails()
+account3 = Customer("Theo", "Asamoah", "Oforikrom",
+                    108844235, "thro@gmail.com")
+
 # Creating a bank
 # Adding customers to the bank
 Ecobank = Bank("Ecobank")
