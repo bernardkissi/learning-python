@@ -26,6 +26,7 @@ class Customer:
         return {
             "firstname": self.fname,
             "lastname": self.lname,
+            "age": 32,
             "address": self.address,
             "email": self.email,
             "pin": self.pin,
@@ -36,6 +37,6 @@ class Customer:
 
     def setPin(self):
         self.pin = random.randint(1000, 9999)
-
+        
     def addWallet(self, wallet: Wallet):
         self.wallet = wallet
