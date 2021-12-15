@@ -96,5 +96,5 @@ class ATM:
         print("You have reached the maximum number of failed attempts.Please contact your bank")
 
     @staticmethod
-    def initializationFailed():
+    def initializationFailed(httpStatusCode):
         print('ATM failed to initialize due to invalid card number')
